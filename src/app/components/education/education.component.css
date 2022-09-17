@@ -1,0 +1,118 @@
+#education {
+    padding: 50px 15px 20px 15px;
+    text-align: center;
+    border-top: 1px solid #dcd9d9;
+    background-color: #fff;
+}
+#education h2 {
+    color: #141062;
+    margin-bottom: 50px;
+}
+#education li{
+    list-style: none;
+}
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    border: 1px solid #dcd9d9;
+    text-align: left;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #F8F8F8;
+}
+#education img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 1%;
+    top: 15%;
+    background-color: #F8F8F8;
+    object-fit: cover;
+    border: 0;
+}
+.education-block h3 {
+    font-weight: 50;
+    float: left;
+    margin: 0;
+    color: #0D00FF;
+    margin-bottom: 10px;
+}
+.education-block span {
+    color: #3D23B5;
+    float: right;
+}
+.education-block h4 {
+    color: #141162;
+    clear: both;
+    font-weight: 50;
+    margin: 0 0 20px 0;
+}
+.education-block p, .education-block ul {
+    margin: 0;
+    color: #202020;
+    font-size: 0.9em;
+}
+.education-block ul {
+    padding: 0 0 0 15px;
+}
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+.heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #0D00FF;
+}
+#education button{
+    display: block;
+    color:#ffffff ;
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    background-color:#141062 ;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    align-content: center;
+    cursor: pointer;
+    BORDER:0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+#education button :hover{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+#i{
+    display: block;
+    position: relative;
+}
+#i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+   }
+    50% {
+        transform: scale(1.2, 1.2);
+   }
+    100% {
+        transform: scale(1, 1);
+   }
+}

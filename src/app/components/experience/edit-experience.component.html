@@ -1,0 +1,51 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="fade-in">
+                    <div class="card-body p-5 text-center">
+                        <div>
+                            <div class="container" *ngIf="expLab">
+                                <div class="row">
+                                    <h2 class="heading">Edit Experience</h2>
+                                    <div>
+                                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                            <div class="form-group">
+                                                <label for="nombreE">Company name</label>
+                                                <input type="text" class="form-control" id="nombreE" name="nombreE"
+                                                    [(ngModel)]="expLab.nombreE" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="empleoE">Job</label>
+                                                <input type="text" class="form-control" id="empleoE" name="empleoE"
+                                                    [(ngModel)]="expLab.empleoE" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="imgEmpresaE">Company Logo Url</label>
+                                                <input type="text" class="form-control" id="imgEmpresaE"
+                                                    name="imgEmpresaE" [(ngModel)]="expLab.imgEmpresaE">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fechaE">Date</label>
+                                                <input type="text" class="form-control" id="fechaE" name="fechaE"
+                                                    [(ngModel)]="expLab.fechaE" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="descripcionE">About the Job</label>
+                                                <input type="text" class="form-control" id="descripcionE"
+                                                    name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                Save
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                

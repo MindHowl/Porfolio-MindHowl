@@ -1,0 +1,19 @@
+<div #target id="about">
+  
+  <div class="container">
+    <li *ngFor="let Perfil of perfil">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="heading">About Me</h2>
+          <img [src]="Perfil.img">
+        </div>
+        <div class="col-md-8">
+          <p>{{Perfil.descripcion}}
+          </p></div>
+        </div>
+      <button type="button" routerLink="/editabt/{{Perfil.id}}" *ngIf="isLogged">
+    <i id="i" class="fa-solid fa-pen"></i>
+  </button>
+    </li>
+  </div>
+</div>

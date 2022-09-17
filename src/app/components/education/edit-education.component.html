@@ -1,0 +1,52 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="fade-in">
+                    <div class="card-body p-5 text-center">
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="heading">Edit Education</h2>
+                                    <div>
+                                        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                            <div class="form-group">
+                                                <label for="nombreE">Institute name</label>
+                                                <input type="text" class="form-control" id="nombreE" name="nombreE"
+                                                    [(ngModel)]="educacion.nombreE" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="tituloE">Title</label>
+                                                <input type="text" class="form-control" id="tituloE" name="tituloE"
+                                                    [(ngModel)]="educacion.tituloE" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="imgInstE">Company Logo Url</label>
+                                                <input type="text" class="form-control" id="imgInstE"
+                                                    name="imgInstE" [(ngModel)]="educacion.imgInstE">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fechaE">Date</label>
+                                                <input type="text" class="form-control" id="fechaE" name="fechaE"
+                                                    [(ngModel)]="educacion.fechaE" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="descripcionE">About the Title</label>
+                                                <input type="text" class="form-control" id="descripcionE"
+                                                    name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                Save
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                
+

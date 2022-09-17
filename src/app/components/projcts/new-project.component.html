@@ -1,0 +1,47 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="fade-in">
+                    <div class="card-body p-5 text-center">
+                        <div>
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="heading">Create Skill</h2>
+                                    <div>
+                                        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                                            <div class="form-group">
+                                                <label for="nombre">Proyect name</label>
+                                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                                    [(ngModel)]="nombre" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="descripcion">Image Url</label>
+                                                <input type="text"class="form-control" id="textarea" rows="5"id="descripcion" name="descripcion"
+                                                    [(ngModel)]="descripcion" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Site Url</label>
+                                                <input type="text" class="form-control" id="img" name="img"
+                                                    [(ngModel)]="img" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="link">Descripcion</label>
+                                                <textarea class="form-control" id="textarea" rows="5"class="form-control" id="link" name="link"
+                                                    [(ngModel)]="link" required></textarea>
+                                            </div>
+                                            
+                                            <button class="btn btn-primary">
+                                                Save
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>                

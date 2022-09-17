@@ -1,0 +1,114 @@
+#about {
+    padding: 60px 70px;
+    background-color: #fff;
+    border-top: 1px solid #dcd9d9;
+}
+#about h2 {
+    color: #141062;
+    text-size-adjust: 25px;
+    margin: 10px;
+}
+#about li{
+    list-style: none;
+}
+#about img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: none;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    margin:auto;
+}
+#about p {
+    color: #202020;
+    padding: 3%;
+    border: 1px solid #e6e6e6;
+    font-weight: 50;
+    font-family:Arial;
+    font-size: 0.9em;
+    border-radius: 40px ;
+    text-align: justify;
+    margin-bottom: 20px;
+    background-color: #F8F8F8;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+.heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #0D00FF;
+}
+@media (max-width: 980px){
+    #about {
+        text-align: center;
+        padding: 20px ;
+   }
+   #about p {
+    width: 100%;
+    height: 100%;
+}
+}
+#about button{
+    display: block;
+    color:#ffffff ;
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    background-color:#141062 ;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    BORDER:0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+#about button :hover{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+#about{
+    list-style: none;
+}
+#i{
+    display: block;
+    position: relative;
+}
+#i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+   }
+    50% {
+        transform: scale(1.2, 1.2);
+   }
+    100% {
+        transform: scale(1, 1);
+   }
+}
+#about li{
+    list-style-type: none;
+    display:inline-block;
+}

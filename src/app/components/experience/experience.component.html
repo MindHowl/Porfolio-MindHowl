@@ -1,0 +1,36 @@
+<div id="experience">
+  <h2 class="heading">Experience</h2>
+  <button type="button" routerLink="/newexp" *ngIf="isLogged">
+    <i  id="i"class="fa-solid fa-plus"></i>
+  </button>
+  
+  <ul>
+  <li *ngFor="let Experiencia of expe"> 
+    <div id="experience-timeline"> 
+      <div class="vtimeline-point"> 
+       <div class="vtimeline-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div></div>
+        <div class="vtimeline-block">
+          <span class="vtimeline-date">{{Experiencia.fechaE}}</span>
+          <div class="vtimeline-content">
+            <img
+              [src]="Experiencia.imgEmpresaE"
+            />
+            <h3>{{Experiencia.nombreE}}</h3>
+            <h4>{{Experiencia.empleoE}}</h4>
+            <p>
+              {{Experiencia.descripcionE}}
+            </p>
+          </div>
+          <button type="button" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+            <i  id= "i" class="fa-solid fa-pen"></i>
+          </button>
+          <button type="button" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+            <i  id ="i" class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+  </li>
+</ul>
+</div>

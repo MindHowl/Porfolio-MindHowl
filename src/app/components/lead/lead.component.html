@@ -1,0 +1,18 @@
+<div id="lead">
+    
+    <div id="lead-content">
+        <li *ngFor="let Perfil of perfil">
+            <h1>{{Perfil.nombreCompleto}}</h1>
+          <h2>{{Perfil.titulo}}</h2> 
+          <button type="button" routerLink="/editabt/{{Perfil.id}}" *ngIf="isLogged">
+            <i id="i" class="fa-solid fa-pen"></i>
+          </button> 
+        </li>
+    </div>
+    <div id="lead-overlay"></div>
+    <div id="lead-down">
+        <a>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>

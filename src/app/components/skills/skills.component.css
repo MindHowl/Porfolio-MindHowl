@@ -1,0 +1,81 @@
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+.heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #0D00FF;
+}
+#skills {
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 1px solid #dcd9d9;
+    background-color: #F8F8F8;
+}
+#skills h2 {
+    color: #141062;
+    margin-bottom: 50px;
+}
+#skills ul {
+    list-style:none;
+    display: inline-block;
+    padding: 0;
+    
+}
+#skills li {
+    display: inline-block;
+    font-size: 1.25em;
+    list-style: none;
+}
+#skills button{
+    display: block;
+    color:#ffffff ;
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    background-color:#141062 ;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    align-content: center;
+    cursor: pointer;
+    BORDER:0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+#skills button :hover{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
+#i{
+    display: block;
+    position: relative;
+    ;
+}
+#i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+   }
+    50% {
+        transform: scale(1.2, 1.2);
+   }
+    100% {
+        transform: scale(1, 1);
+   }
+}

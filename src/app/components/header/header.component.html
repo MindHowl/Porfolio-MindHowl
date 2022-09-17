@@ -1,0 +1,26 @@
+<header>
+    <div  id="columna" class="col-xl">
+        <img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" />
+    </div>
+    <div  id="columna1" class="col-xl">
+        <ul *ngFor="let Perfil of perfil">
+        <li>
+            <a [href]="Perfil.github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a [href]="Perfil.stackoverflow" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a [href]="Perfil.linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a [href]="Perfil.facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a [href]="Perfil.instagram" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+        <button type="button" id="save" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">Log In</button>
+        <button type="button" id="save" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">Log Out</button>
+    </div>
+</header>

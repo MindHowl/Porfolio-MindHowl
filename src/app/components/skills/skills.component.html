@@ -1,0 +1,46 @@
+<div id="skills">
+  <h2 class="heading">Skills</h2>
+  <button type="button" routerLink="/newskl" *ngIf="isLogged">
+        <i  id="i"class="fa-solid fa-plus"></i>
+      </button>
+  <div class="container">
+    <div class="row">
+      
+      <ul>
+        <li *ngFor="let Skills of skill">
+          <circle-progress
+            [percent]="Skills.porcentaje"
+            [radius]="70"
+            [showTitle]="true"
+            [toFixed]="0"
+            [showInnerStroke]="true"
+            [showZeroOuterStroke]="true"
+            [backgroundPadding]="5"
+            [backgroundOpacity]="1"
+            [outerStrokeGradient]="true"
+            [outerStrokeWidth]="10"
+            [innerStrokeWidth]="10"
+            [outerStrokeColor]="'#0D00FF'"
+            [outerStrokeGradientStopColor]="'#53a9ff'"
+            [innerStrokeColor]="'#e7e8ea'"
+            [titleColor]="'#444444'"
+            [unitsColor]="'#444444'"
+            [subtitleColor]="'#A9A9A9'"
+            [title]="Skills.nombre"
+            [animation]="true"
+            [animationDuration]="1000"
+            [space]="-10"
+            [backgroundStrokeWidth]="0"
+            [lazy]="true"
+          ></circle-progress>
+          <button type="button" routerLink="/editskl/{{Skills.id}}" *ngIf="isLogged">
+            <i  id= "i" class="fa-solid fa-pen"></i>
+          </button>
+          <button type="button" (click)="delete(Skills.id)" *ngIf="isLogged">
+            <i  id ="i" class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

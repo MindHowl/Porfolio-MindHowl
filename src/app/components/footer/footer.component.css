@@ -1,0 +1,32 @@
+footer {
+    padding: 50px 0;
+    background-image: url(../../../assets/images/footer-bg.png);
+}
+footer li{
+    list-style-type: none;
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+footer a{
+    color:#fff;
+    position: relative;
+    padding: 10px;
+    float:right;
+    top: -10px;
+}
+
+#social{
+    float: right;
+}
+
+.copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+@media only screen and (max-width: 768px){
+    footer  a{
+        text-align: center;
+        left: -85px;
+    }
+}

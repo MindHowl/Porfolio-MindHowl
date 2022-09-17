@@ -1,0 +1,31 @@
+<div id="projects">
+    <h2 class="heading">Projects</h2>
+    <button class="button" type="button" routerLink="/newpry" *ngIf="isLogged">
+        <i  id="i"class="fa-solid fa-plus"></i>
+      </button>
+    <div class="container">
+        <div class="row">
+            <li *ngFor="let Proyectos of proyecto">
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img 
+                    [src]="Proyectos.img" 
+                    >
+                </div>
+                <div class="project-info">
+                    <h3>{{Proyectos.nombre}}</h3>
+                    <p>{{Proyectos.descripcion}}</p>
+                    <a class="red-project" [href]="Proyectos.link">View Project</a>
+                </div>
+            </div>
+            <button type="button" routerLink="/editpry/{{Proyectos.id}}" *ngIf="isLogged">
+                <i  id= "i" class="fa-solid fa-pen"></i>
+              </button>
+              <button type="button" (click)="delete(Proyectos.id)" *ngIf="isLogged">
+                <i  id ="i" class="fa-solid fa-xmark"></i>
+              </button>
+        </li>
+        </div>
+    </div>
+</div>
+

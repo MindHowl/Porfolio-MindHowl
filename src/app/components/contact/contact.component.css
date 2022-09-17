@@ -1,0 +1,86 @@
+#contact {
+    padding: 20px 15px;
+    background-color:#F8F8F8 ;
+    text-align: center;
+    border: 1px solid #dcd9d9
+}
+#contact h2 {
+    color: #141062;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+#contact li{
+    list-style: none;
+}
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+#contact-form input, #contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #dcd9d9;
+    margin-bottom: 10px;
+    background: #ffffff;
+    color: #202020;
+    transition: 0.5s ease all;
+}
+#contact-form input::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
+    color: #202020;
+}
+#contact-form input:-moz-placeholder, #contact-form textarea:-moz-placeholder {
+    color: #141062;
+    opacity: 1;
+}
+#contact-form input::-moz-placeholder, #contact-form textarea::-moz-placeholder {
+    color: #141062;
+    opacity: 1;
+}
+#contact-form input:-ms-input-placeholder, #contact-form textarea:-ms-input-placeholder {
+    color: #141062;
+}
+#contact-form input:focus, #contact-form textarea:focus {
+    outline: none;
+    background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+#contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+#contact-form button {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 40px;
+    padding: 5px 10px;
+    border: none;
+    color: #0D00FF;
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.5s ease all;
+}
+#contact-form button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+.heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #0D00FF;
+}
